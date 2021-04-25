@@ -1,0 +1,132 @@
+<!--
+<div *ngIf="!isSignedIn">
+  <h2>Sign in</h2>
+  <input type="text" #email>
+  <input type="text" #password>
+  <button (click)="onSignin(email.value, password.value)">Sign in</button>
+</div>
+<app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
+
+
+    <img src="https://thumbs.gfycat.com/BrokenKeyBug-size_restricted.gif">
+-->
+
+<div *ngIf="!isSignedIn">
+<!--Navbar-->
+
+  <!-- Navbar brand -->
+
+  <!-- Collapsible content -->
+
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Basic dropdown<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <div class="btn-group" mdbDropdown>
+            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  <!-- Collapsible content -->
+
+<!--/.Navbar-->
+<div class="container">
+  <div class="image">
+    <img class="img1" src="https://images.creativemarket.com/0.1.0/ps/8817474/1820/1214/m1/fpnw/wm0/1-.png?1596286343&s=3a568e3984a2aa7504e0a9bb53097b25">
+  </div>
+  <div class="text1">
+    <h1>Chatify</h1>
+    <h1 class="best">Have your best chat</h1>
+    <p class="lead">
+      All your conversations, work items into one place
+      <br>
+      Fast, easy & unlimited chat experience you will ever had.
+    </p>
+    <button class="button center">Be memder of chatify</button>
+  </div>
+</div>
+<br><br><br><br><br><br>
+<div>
+  <h1 class="center">Our benefits</h1>
+  <div class="card0 center">
+    <img src="https://i.pinimg.com/originals/d2/3a/25/d23a25e799613ef9e8ddbd2837135de9.gif" alt="Avatar" style="width:60%" class="ben center">
+    <div class="container0 center">
+      <h4 class="center">This char will be created only in 10 weeks :') </h4>
+    </div>
+  </div>
+  <hr>
+  <div class="card0 center">
+    <img src="https://betterstudio.com/wp-content/uploads/2019/12/GIF-in-WordPress.gif" alt="Avatar" style="width:60%" class="ben center" >
+    <div class="container0 center">
+      <h4 class="center">This app going to be done by Assel and Aibat</h4>
+    </div>
+  </div>
+  <hr>
+  <div class="card0 center">
+    <img src="https://c.tenor.com/pPoUmi0Z1fUAAAAj/cat-pet.gif" alt="Avatar" style="width:60%" class="ben center">
+    <div class="container0 center">
+      <h4 class="center">Just give us an A please :') this is too hard to me</h4>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br>
+<div  class="card center">
+  <h2>Log-In Account</h2>
+  <div class="input-border">
+   <input type="text" #email class="text" required>
+   <label>email</label>
+   <div class="border"></div>
+  </div>
+
+  <div class="input-border">
+   <input type="text" #password class="text" required>
+   <label>Password</label>
+   <div class="border"></div>
+  </div>
+  <button (click)="onSignin(email.value, password.value)" class="btn1">Sign in</button>
+ </div>
+</div>
+ <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>

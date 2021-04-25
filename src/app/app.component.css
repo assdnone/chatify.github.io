@@ -1,0 +1,156 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: sans-serif;
+  }
+
+  body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .card{
+  width: 380px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px silver;
+  background: #212121;
+  }
+
+  h2{
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+  }
+  h1{
+    color:rgb(3, 10, 19);
+    text-align: center;
+    margin-top: 40px;
+  }
+  p{
+    color:#212121;
+  }
+  .button {
+    background-color: rgb(3, 10, 19);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .lead{
+    text-align: center;
+    margin: 10px;
+    margin-top: 40px;
+  }
+  .best{
+    color:rgba(17, 15, 133, 0.911);
+  }
+  .img1 {
+    max-width: 100%
+  }
+  .image {
+    margin-top: 40px;
+    flex-basis: 40%
+  }
+  .text1 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-border{
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 30px;
+  }
+
+  .text{
+  width: 95%;
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  border-bottom: 2px solid silver;
+  background: none;
+  font-size: 18px;
+  color: rgb(230, 169, 0);
+  }
+
+  .border{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: .5s;
+  }
+
+  .text:focus ~ .border,
+  .text:valid ~ .border{
+  width: 100%;
+  }
+
+  label{
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  color: silver;
+  pointer-events: none;
+  font-size: 18px;
+  transition: .5s;
+  }
+
+  .text:focus ~ label,
+  .text:valid ~ label{
+  top: -12px;
+  left: 0;
+  color: white;
+  font-size: 14px;
+  }
+
+  .btn1{
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background: none;
+  border: 2px solid orange;
+  color: white;
+  font-size: 18px;
+  transition: .5s;
+  }
+
+  .btn:hover{
+  border: 2px solid white;
+  }
+
+
+  .card0 {
+    transition: 0.3s;
+    margin-top: 50px;
+    width: 30%;
+  }
+  .ben{
+    border-radius: 50%;
+  }
+  .container0 {
+    padding: 2px 16px;
+  }
